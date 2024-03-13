@@ -24,7 +24,7 @@ btnNext.addEventListener("click", () => {
 
 const loadMovies = async () => {
     try {
-        let response = await fetch(`https://api.themoviedb.org/3/movie/popular?api_key=cea9bfd95c5344b2a13b19d375f7c6e4&language=en-US&page=${page}`)
+        let response = await fetch(`https://api.themoviedb.org/3/movie/popular?(agregar apikey sin que se pueda ver )&language=en-US&page=${page}`)
         console.log(response)
         if (response.status === 200) {
             const data = await response.json()
